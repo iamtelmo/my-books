@@ -17,17 +17,6 @@ const HYGRAPH_ENDPOINT =
   "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clww9as4h06ae07w86sqyzdps/master";
 const HYGRAPH_TOKEN = process.env.HYGRAPH_TOKEN;
 
-console.log("Next auth secret: ", process.env.NEXTAUTH_SECRET);
-console.log("Next auth url: ", process.env.NEXTAUTH_URL);
-console.log("Google client secret: ", process.env.GOOGLE_CLIENT_SECRET);
-console.log("Google client id: ", process.env.GOOGLE_CLIENT_ID);
-console.log("Google books api key: ", process.env.GOOGLE_BOOKS_API_KEY);
-console.log(
-  "Hygraph graphcms endpoint: ",
-  process.env.PUBLIC_GRAPHCMS_ENDPOINT,
-);
-console.log("Hygraph token: ", process.env.HYGRAPH_TOKEN);
-
 const client = new GraphQLClient(HYGRAPH_ENDPOINT, {
   headers: {
     authorization: `Bearer ${HYGRAPH_TOKEN}`,
